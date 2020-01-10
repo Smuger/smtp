@@ -54,7 +54,7 @@ public class sendEmail extends Thread{
         Transport transport = SMTP.getMailSession.getTransport("smtp");
 
         System.out.println("\nCredentials provided");
-        transport.connect("smtp.gmail.com", "smtp.kwietniewski@gmail.com", ""); // YOUR PASSWORD
+        transport.connect("smtp.gmail.com", "smtp.kwietniewski@gmail.com", ""); // <- YOUR PASSWORD
 
         System.out.println("\nAttempting sending");
         transport.sendMessage(SMTP.generateMailMessage, SMTP.generateMailMessage.getAllRecipients());
